@@ -97,7 +97,7 @@ class Apple{
         if(distance < snake.radio + this.radio){   // si se cumple hay colisión
             this.position = {
                 x: Math.floor(Math.random() * ((canvas.width - this.radio) - this.radio + 1)) + this.radio, //generar número aleatorio para la nueva posición
-                y: Math.floor(Math.random() * ((canvas.height - this.radio) - this.radio + 1)) + this.radio,
+                y: Math.floor(Math.random() * ((canvas.height - 50 - this.radio) - this.radio + 1)) + this.radio + 50,
              }
              snake.createBody();
              scoreP++;
